@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Nunito:ital,wght@1,900&family=Open+Sans&family=Roboto:ital,wght@1,700&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+  /* background-color: #081921; */
+  background-color: #edf2f7;
+}
+.clock {
+  border-radius: 100%;
+  /* border: 3px solid #04344a; */
+  border: 3px solid black;
+  box-shadow:
+  0px 0px 80px rgba(0, 0, 0, 0);
+    margin-bottom: 54px;
+}
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+.hour,
+.minute {
+  position: absolute;
+  height: 100px;
+  width: 6px;
+  margin: auto;
+  /* background-color: #ffffffa1; */
+  background-color: #04344a;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  z-index: 1;
+  border-radius: 5px;
+}
+.minute {
+  position: absolute;
+  height: 130px;
+  width: 4px;
+  top: -38%;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.seconde {
+  position: absolute;
+  height: 90px;
+  width: 2px;
+  margin: auto;
+  top: -26%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  background: #e93035;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}
+.clock2{
+  width:450px;
+  height: 136px;
+  /* background-color: red; */
+  margin-top: 500px;
+  margin-left: -405px;
+  border-radius: 5px;
+  border: 3px solid black;
+  box-shadow:
+  0px 0px 80px rgba(0, 0, 0, 0);
+}
+.clock2 div{
+  margin-left: 126px;
+}
+.setTime{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: black;
+    font-size: 50px;
+}
+.second2{
+  display: inline-block;
+  margin-left: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+  color: black;
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.sunny{
+  color: white;
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  display: none;
+}
+.sunny:active{
+  transform: scale(0.98);
+}
+.moon{
+  color: black;
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.moon:active{
+  transform: scale(0.98);
+}
+.div2{
+  margin-top: -53px;
+  text-align: center;
+  margin-right: 139px;
+}
+.setDate{
+  display: inline-block;
+  margin-left: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+  color: black;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 500px) {
+  body{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .clock{
+    display: none;
+  }
+  .clock2{
+    margin-left: -6px;
+    transform: rotate(90deg);
+    margin-top: 154px;
+    width: 100%;
+    height: 197px;
+  }
+  .clock2 div {
+    margin-left: 64px;
+  }
+  .div2{
+    margin-left: 84px;
+    width: 43%;
+  }
+  .setDate{
+    font-size: 15px;
+    margin-left: 46px;
+  }
+}
+

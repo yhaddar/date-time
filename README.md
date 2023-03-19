@@ -7,13 +7,6 @@ website date and time
 
 ![Desktop](https://www6.0zz0.com/2023/03/19/14/371515669.png)
 
-
-
-## link project
-
-- https://furniz-store.netlify.app/
-## Setup
-
 ## Build by
 
 **Front-end:** html, css, javascript
